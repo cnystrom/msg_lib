@@ -16,9 +16,9 @@
 #ifndef _MSG_LIB_VERSION_H
 #define _MSG_LIB_VERSION_H
 
-#define MSG_LIB_VERSION		"1.0"
+#define MSG_LIB_VERSION		"1.1"
 #define MSG_LIB_VERSION_MAJOR	1
-#define MSG_LIB_VERSION_MINOR	0
+#define MSG_LIB_VERSION_MINOR	1
 #define MSG_LIB_VERSION_YEAR	"2026"
 #define MSG_LIB_ORIGIN \
 	"Split from NewIO 0.12, https://github.com/cnystrom/newio"

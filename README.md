@@ -1,6 +1,11 @@
 # msg_lib: threaded message passing over a pair of file descriptors
 
-Version 1.0 (2026). Split from NewIO 0.12, https://github.com/cnystrom/newio
+Version 1.1 (2026). Split from NewIO 0.12, https://github.com/cnystrom/newio
+
+## Versions
+
+- **1.0:** original code as published in NewIO 0.12 (tag `v1.0`).
+- **1.1:** this release, with the fixes listed below. See `CHANGES.md`.
 
 msg_lib is NewIO's message layer. A program packs integers, strings and
 binary data into a message and sends it. Background threads (SDL threads)
@@ -36,7 +41,7 @@ From `base64.h`: `base64_encode`, `base64_decode`. From `queue.h`: `que`,
 `init_que`, `que_full`, `que_empty`, `enque`, `deque`, `peek_que`
 (25 slots). From `bitqueue.h`: `INTERTHREADQUEUE` and
 `BoundedInterthreadQueueCreate/Put/Get/Empty/Destroy/Kill`.
-`msg_lib_version.h` defines `MSG_LIB_VERSION` ("1.0") and `MSG_LIB_ORIGIN`.
+`msg_lib_version.h` defines `MSG_LIB_VERSION` ("1.1") and `MSG_LIB_ORIGIN`.
 
 ## Dependencies
 
@@ -68,7 +73,7 @@ When unpacked from the release tarballs, the directory names include the
 version, so give the sibling paths:
 
 ```sh
-make STR_LIB_DIR=../str_lib-1.0 LOG_LIB_DIR=../log_lib-1.0 test
+make STR_LIB_DIR=../str_lib-1.1 LOG_LIB_DIR=../log_lib-1.1 test
 ```
 
 The test checks the buffer, base64, queue and bitqueue code, then forks a
@@ -107,9 +112,9 @@ Contact: Chris Nystrom <cnystrom@gmail.com>
 - Not copied: `archive.sh`, `attic/` and `examples/`. The examples need the
   rest of NewIO and stay there.
 
-## Fixed in 1.0
+## Fixed in 1.1
 
-No code fixes were needed here. The base64 credit above is new in 1.0.
+No code fixes were needed here. The base64 credit above is new in 1.1.
 
 ## Known issues
 
